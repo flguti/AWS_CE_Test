@@ -29,8 +29,6 @@
 # • ami-3703414f – Windows 2016 Base
 # Equivalent AMI’s may be used in other regions if your project is region specific.
 #
-# AWS Cloud Engineer | Page 4
-#
 # SUCCESS CRITERIA
 # The final test will be running these two curl commands:
 # curl -H "Host: www.test.com" http://name-of-elb-endpoint-here
