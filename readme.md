@@ -3,15 +3,18 @@
 ##Multiple Website Hosting
 
 #OBJECTIVE
+
 Launch a simple web server in a load balanced and highly available manner utilizing automation
 and AWS best practices. This web server should be able to serve two different websites.
 
 #DELIVERABLES
+
 A single file template for either CloudFormation or Terraform which achieves the requirements
 listed below. Template file (or URL to the template) should be emailed back to the Onica point of
 contact by the set deadline.
 
 #REQUIREMENTS
+
 Create a single file template which accomplishes the following:
 • Create a VPC with private / public subnets and all required dependent infrastructure.
 • Create an ELB to be used to register web server instances.
@@ -34,6 +37,7 @@ Equivalent AMI’s may be used in other regions if your project is region specif
 
 
 #SUCCESS CRITERIA
+
 The final test will be running these two curl commands:
 curl -H "Host: www.test.com" http://name-of-elb-endpoint-here
 curl -H "Host: ww2.test.com" http://name-of-elb-endpoint-here
@@ -43,5 +47,6 @@ appropriately without any interaction.
 
 ##Points of decision
 #Template File
+
 The file was created using Terraform, there was no utilization of modules, variable files or any other 
 Creation
