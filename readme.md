@@ -60,5 +60,13 @@
     There was no code created to create EC2 instances, since the requirements included creation of a Launch Configuration and Auto Scaling Group, generation code for EC2 creation would only duplicate the code.
     For the Linux OS it was chosen Amazon Linux, the AMI mentioned above was not located, the utilized option was the most udated standard Version provided by Amazon "ami-03338e1f67dae0168".
 
+# Authors
 
+    - Flavio Lopes
+
+# Maintainer
+
+    Any question please contact:
+
+    - flglopes@gmail.com
 
