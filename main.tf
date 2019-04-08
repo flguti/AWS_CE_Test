@@ -377,13 +377,17 @@ output "lb_address" {
   value = <<EOF
       "${aws_lb.alb.dns_name}
       
-      SUCCESS CRITERIA
-       The final test will be running these two curl commands:
+      FINAL TEST
+       For the final test the command:
         curl -H "Host: www.test.com" http://${aws_lb.alb.dns_name}
+        Must return 'hello test'
+        and the command:
         curl -H "Host: ww2.test.com" http://${aws_lb.alb.dns_name}
-        Those two commands should spit out 'hello test' and 'hello test2' respectively.
-        If the servers are terminated, the autoscaling group should replace them and configure them
-        appropriately without any interaction.
+        Must return 'hello test2'
+        Also a server should be deleted to test the autoscaling group configuration.
+
+      Thank you for the opportunity
+      FL
       "
     EOF
 }

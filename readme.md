@@ -58,6 +58,7 @@
 ## REGARDING REQUIREMENTS
 
     There was no code created to create EC2 instances, since the requirements included creation of a Launch Configuration and Auto Scaling Group, generation code for EC2 creation would only duplicate the code.
+    There is also no key pair assigned to the instances since there is no manual intervention planned for this environment.
     For the Linux OS it was chosen Amazon Linux, the AMI mentioned above was not located, the utilized option was the most udated standard Version provided by Amazon "ami-03338e1f67dae0168".
 
 ## AUTHOR
